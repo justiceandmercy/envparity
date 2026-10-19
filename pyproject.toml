@@ -1,0 +1,16 @@
+[project]
+name = "envparity"
+version = "0.1.0"
+description = "Compare environment variables referenced in source code against .env files to catch undocumented or orphaned config."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "envparity contributors" }]
+keywords = ["env", "dotenv", "config", "lint", "cli"]
+
+[project.scripts]
+envparity = "envparity.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
